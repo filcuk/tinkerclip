@@ -49,7 +49,7 @@
 ::date@::       SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
 ::time@::       SendInput(FormatTime(A_Now, "HH:mm"))
 ::stamp@::      SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
-::scr@::        SendInput ("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd hhmmss"))
+::scr@::        SendInput("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd hhmmss"))
 
 #Hotstring X0
 
@@ -60,11 +60,11 @@
 #Hotstring *0
 
 ; Markdown URL source inserter
-::source@::
-{
-    URL := Clipboard
-    RegExMatch(Clipboard, "O)" . "^(?:https?:)?(?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)(?)", Out) ; "O)" = AHK object mode
-    Out := "[" . Out[1] . "](" . URL . ")"
+; TODO: Fix RegEx function
+::source@:: {
+    URL := A_Clipboard
+    RegExMatch(A_Clipboard, "^(?:https?:)?(?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)(?)", &Out)
+    Out := "[" Out[1] "](" URL ")"
     ; SendInput % Out   ; Can be too slow
     PasteThis(Out)
 }
