@@ -10,16 +10,12 @@ Tray.Add("&Exit", TrayHandler)
 TrayHandler(Item, *) {
     Switch(Item) {
         Case "No &Idle":
-            Tray.ToggleCheck("No &Idle")
             global TrayIdle
-            If (TrayIdle) {
-                TrayIdle := false
-            } Else {
-                TrayIdle := true
-            }
-        Case "&Reload":
-            Reload()
-        Case "&Exit":
-            ExitApp()
+            
+            Tray.ToggleCheck("No &Idle")
+            TrayIdle := not TrayIdle
+        
+        Case "&Reload": Reload()
+        Case "&Exit": ExitApp()
     }
 }

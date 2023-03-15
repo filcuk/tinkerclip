@@ -3,7 +3,7 @@
 InstallKeybdHook
 InstallMouseHook
 
-MWIdleThreshold := 1000 * 3
+MWIdleThreshold := 1000 * 60
 MWMove := 100
 
 MouseWiggle() {
