@@ -40,11 +40,8 @@ MoveS := 50
 MoveL := 100
 
 
-; Set timers
-; SetTimer, IdleLoop, 1000		; Move mouse when idle
-; SetTimer, ExcelClipboard, 500	; Cancled anoying Excel clipboard popup
-
-
+; === LIBRARIES ===========================================
+#Include ExcelModalTerminator.ahk
 #Include %A_ScriptDir%\Core\Hotstrings.ahk
 #Include %A_ScriptDir%\Private\Private0.ahk
 
@@ -52,7 +49,11 @@ MoveL := 100
 ; Loop Files, A_ScriptDir "\Private\*.ahk"
 ; 	#Include %A_LoopFilePath%
 
-; End of auto-execute section
+; === TIMERS ==============================================
+; SetTimer, IdleLoop, 1000		; Move mouse when idle
+SetTimer(ExcelModalTerminator, 1000)	; Clear unwanted Excel pop-ups
+
+; === END OF AUTO-EXECUTE =================================
 return
 
 ; If computer was idle for certain ammount of time, move mouse
@@ -70,14 +71,7 @@ return
 ; }
 ; return
 
-; Check if Excel clipboard popup is up and close it
-; ExcelClipboard:
-; 	IfWinExist, Microsoft Excel, There is a large amount of information on the Clipboard
-; 	{
-; 		WinActivate
-; 		Send, {Enter}
-; 	}
-; return
+
 
 
 
