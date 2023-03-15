@@ -35,6 +35,7 @@
 
 ::msa::MS Access
 ::mse::MS Excel
+::pbi::Power BI
 
 /*
 #Hotstring Z0
@@ -47,7 +48,7 @@
 
 ::date@::       SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
 ::time@::       SendInput(FormatTime(A_Now, "HH:mm"))
-::tstamp@::     SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
+::stamp@::      SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
 ::scr@::        SendInput ("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd hhmmss"))
 
 #Hotstring X0

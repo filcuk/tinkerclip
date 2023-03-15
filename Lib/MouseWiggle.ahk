@@ -3,13 +3,13 @@
 InstallKeybdHook
 InstallMouseHook
 
-MWEnabled := true
-MWIdleThreshold := 1000 * 60
+MWIdleThreshold := 1000 * 3
 MWMove := 100
 
-MouseWiggle()
-{
-	If (A_TimeIdle > MWIdleThreshold && MWEnabled)
+MouseWiggle() {
+	global TrayIdle
+
+	If (A_TimeIdle > MWIdleThreshold && TrayIdle)
 	{
 		SendEvent("{Click rel 0, -50, 0}")
 		SendEvent("{Click rel 0, 100, 0}")
