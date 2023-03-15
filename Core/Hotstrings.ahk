@@ -69,17 +69,17 @@
     PasteThis(Out)
 }
 
-::(c)::{U+00A9}		; �
-::(r)::{U+00AE}		; �
+::(c)::{U+00A9}		; ©
+::(r)::{U+00AE}		; ®
 
-::<<::{U+00AB}		; �
-::>>::{U+00BB}		; �
+::<<::{U+00AB}		; «
+::>>::{U+00BB}		; »
 
 ; Unicode - Simple arrows
-::<-::{U+2190}		; Leftwards Arrow
-::/\::{U+2191}		; Upwards Arrow
-::->::{U+2192}		; Rightwards Arrow
-::\/::{U+2193}		; Downwards Arrow
+::<-::{U+2190}		; ←
+::/\::{U+2191}		; ↑
+::->::{U+2192}		; →
+::\/::{U+2193}		; ↓
 ;::<>::{U+2194}		; Left Right Arrow
 ;::::{U+2195}		; Up Down Arrow
 ;::::{U+2196}		; North West Arrow
@@ -87,12 +87,12 @@
 ;::::{U+2198}		; South East Arrow
 ;::::{U+2199}		; South West Arrow
 
-::[v]::{U+1F5F9}	; Ballot Box with Bold Check
-::[x]::{U+2612}		; Ballot Box with X
-::[ ]::{U+2610}		; Ballot Box
+::[v]::{U+1F5F9}	; 🗹
+::[x]::{U+2612}		; ☒
+::[ ]::{U+2610}		; ☐
 
-::v@::{U+2610}		; Check Mark
-::x@::{U+2717}		; Ballot X
+::v@::{U+2713}		; ✓
+::x@::{U+2717}		; ✗
 
 ; https://unicode-table.com/en/sets/unit-symbols/
 ; TODO
@@ -102,14 +102,14 @@
 ::^x::{U+00D7}		; × (multiplication sign)
 
 ; Math
-::=/=::{U+2260}		; Doesn't equal
+::=/=::{U+2260}		; ≠ (not equal)
 ::^/::{U+00F7}		; ÷
 ::^*::{U+2217}		; ∗ (asterisk operator)
 
 
 ; ? - hostring will trigger even inside a word
 #Hotstring ?
-::^o::{U+00B0}		; °
+; ::^o::{U+00B0}		; °
 ::-+::{U+2213}		; ∓ (minus-or-plus sign)
 ::+-::{U+00B1}		; ± (plus minus symbol)
 ::-~::{U+2242}		; ≂ (minus tilde)
@@ -120,9 +120,9 @@
 
 ; * - trigger hostring without ending character
 #Hotstring *0
-::1/4::{U+00BC}		; �
-::1/2::{U+00BD}		; �
-::3/4::{U+00BE}		; �
+::1/4::{U+00BC}		; ¼
+::1/2::{U+00BD}		; ½
+::3/4::{U+00BE}		; ¾
 
 #Hotstring O
 
