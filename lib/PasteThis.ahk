@@ -2,6 +2,7 @@
 ; Use clipboard to instantly insert text instead of sending individual keystrokes
 ; Saves and restores initial clipboard content
 ; https://www.autohotkey.com/boards/viewtopic.php?p=483549&sid=c8136c2ed3bf174201b1ec5c72d1ffb7#p483549
+
 PasteThis(text)
 {
     Static tmp_clip, tmp_clip2
