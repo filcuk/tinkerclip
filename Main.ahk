@@ -31,16 +31,11 @@ MenuTest := "Test"
 
 
 
-; Inactivity loop
-;~ #InstallKeybdHook
-;~ #InstallMouseHook
 
-MaxIdleMs := 1000 * 60
-MoveS := 50
-MoveL := 100
 
 
 ; === LIBRARIES ===========================================
+#Include MouseWiggle.ahk
 #Include ExcelModalTerminator.ahk
 #Include %A_ScriptDir%\Core\Hotstrings.ahk
 #Include %A_ScriptDir%\Private\Private0.ahk
@@ -50,26 +45,13 @@ MoveL := 100
 ; 	#Include %A_LoopFilePath%
 
 ; === TIMERS ==============================================
-; SetTimer, IdleLoop, 1000		; Move mouse when idle
+; SetTimer(MouseWiggle, 1000)			; Wiggle mouse when idle
 SetTimer(ExcelModalTerminator, 1000)	; Clear unwanted Excel pop-ups
 
 ; === END OF AUTO-EXECUTE =================================
 return
 
-; If computer was idle for certain ammount of time, move mouse
-; IdleLoop:
-; If (A_TimeIdle > MaxIdleMs && MenuNoIdleEnabled)
-; {
-; 	SendEvent {Click rel 0, -%MoveS%, 0}
-; 	SendEvent {Click rel 0, %MoveL%, 0}
-; 	SendEvent {Click rel 0, -%MoveS%, 0}
-; 	SendEvent {Click rel %MoveS%, 0, 0}
-; 	SendEvent {Click rel -%MoveL%, 0, 0}
-; 	SendEvent {Click rel %MoveS%, 0, 0}
-	
-; 	Sleep % MaxIdleMs * 0.75
-; }
-; return
+
 
 
 
