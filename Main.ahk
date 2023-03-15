@@ -76,22 +76,3 @@ return
 ; 	Case % MenuTest:
 ; 		MsgBox % MenuID . ", " . MenuItemID . ", " . MenuItemPos
 ; }
-
-; Scrub selector from URL
-$^c::
-{
-	Clipboard := ""
-	Send "^c"
-	Clipwait 3
-	Contents := Clipboard
-
-	if (InStr(Contents, "https://redacted.com/") != 0) {
-		; URL contains selector
-		if (InStr(Contents, "#") != 0)
-			Contents := SubStr(Contents, 1, InStr(Contents, "?")) . SubStr(Contents, InStr(Contents, "#"))
-		else
-			Contents := SubStr(Contents, 1, InStr(Contents, "?") - 1)
-		
-		Clipboard := Contents
-	}
-}
