@@ -5,6 +5,7 @@
 ; *     Ending character is not required
 ; *0    Ending character is required (default)
 ; ?     Hotstring will trigger even when inside another word
+; ?0
 ; B     Automatic backspacing on (default)
 ; B0    Automatic backspacing off
 ; C     Case sensitivity on
