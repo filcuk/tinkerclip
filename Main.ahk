@@ -4,7 +4,7 @@ SetWorkingDir A_ScriptDir  ; Ensures a consistent starting directory.
 
 Persistent(Persist := true)
 #SingleInstance Force
-#Include "%A_ScriptDir%\lib"
+#Include "%A_ScriptDir%\Lib"
 
 Hotstring("EndChars", " `n`t")
 
@@ -43,6 +43,14 @@ MoveL := 100
 ; Set timers
 ; SetTimer, IdleLoop, 1000		; Move mouse when idle
 ; SetTimer, ExcelClipboard, 500	; Cancled anoying Excel clipboard popup
+
+
+#Include %A_ScriptDir%\Core\Hotstrings.ahk
+#Include %A_ScriptDir%\Private\Private0.ahk
+
+; #Include doesn't seem to work inside of a loop:
+; Loop Files, A_ScriptDir "\Private\*.ahk"
+; 	#Include %A_LoopFilePath%
 
 ; End of auto-execute section
 return
@@ -111,7 +119,3 @@ $^c::
 		Clipboard := Contents
 	}
 }
-
-#Include %A_ScriptDir%\usr\Hotstrings.ahk
-
-; TODO: Include all private modules
