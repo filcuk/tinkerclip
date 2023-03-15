@@ -1,8 +1,32 @@
 ; https://www.autohotkey.com/docs/Hotstrings.htm
 ; https://www.autohotkey.com/docs/commands/Hotstring.htm
 
-; TODO 
-; when tere's available autocomplete, pop up a message saying: press 'tab' to complete char x
+; === OPTIONS =============================================
+; *     Ending character is not required
+; *0    Ending character is required (default)
+; ?     Hotstring will trigger even when inside another word
+; B     Automatic backspacing on (default)
+; B0    Automatic backspacing off
+; C     Case sensitivity on
+; C0    Case sensitivity/non-conformance off (default)
+; C1    Case non-conformance (hoststring doesn't follow typed case)
+; Kn    Set delay between keystrokes in ms (ignored by SendInput)
+; O     Omit ending character
+; Pn    Priority (no effect on auto-replace hotstrings)
+; R     Send replacement text raw (no special key translation)
+; S     Exempt hotstring from Suspend
+; S0    Remove exemption (default)
+; SI    Use SendInput (default)
+; SE    Use SendEvent
+; SP    Use SendPlay
+; T     Use Text mode
+; X     Execute (e.g. function)
+; Z     Reset hotstring recogniser after each trigger
+; Z0    Disable recogniser reset on trigger (default)
+
+; TODO when tere's available autocomplete, pop up a message saying: press 'tab' to complete char x
+
+#Hotstring EndChars -()[]{}':;"/\,.?!`n `t
 
 ; C - case sensitive
 ; Z - reset recogniser after each hotstring
@@ -18,44 +42,30 @@
 #Hotstring Z
 */
 
-; Omit ending character
-#Hotstring O
-::date@::
-FormatTime, TimeStr, A_Now, yyyy-MM-dd
-SendInput % TimeStr
-return
+#Hotstring * X
 
-::time@::
-FormatTime, TimeStr, A_Now, HH:mm
-SendInput % TimeStr
-return
+::date@::       SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
+::time@::       SendInput(FormatTime(A_Now, "HH:mm"))
+::tstamp@::     SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
+::scr@::        SendInput ("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd hhmmss"))
 
-::tstamp@::
-FormatTime, TimeStr, A_Now, yyyy-MM-dd HH:mm
-SendInput % TimeStr
-return
+#Hotstring X0
 
-::scr@::
-FormatTime, TimeStr, A_Now, yyyy-MM-dd hhmmss
-SendInput % "Screenshot " . TimeStr
-return
+::dg@::     {U+00B0}
+::dgc@::    {U+2103}
+::dgf@::    {U+2109}
 
-::deg::{U+00B0}
-::degc::{U+2103}
-::degf::{U+2109}
+#Hotstring *0
 
-#Hotstring O0
-
-; * - trigger hostring without ending character
-#Hotstring *
-
-::source@:: ; Markdown URL source inserter
-URL := Clipboard
-RegExMatch(Clipboard, "O)" . "^(?:https?:)?(?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)(?)", Out) ; "O)" = AHK object mode
-Out := "[" . Out[1] . "](" . URL . ")"
-; SendInput % Out   ; Can be too slow
-PasteThis(Out)
-return
+; Markdown URL source inserter
+::source@::
+{
+    URL := Clipboard
+    RegExMatch(Clipboard, "O)" . "^(?:https?:)?(?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)(?)", Out) ; "O)" = AHK object mode
+    Out := "[" . Out[1] . "](" . URL . ")"
+    ; SendInput % Out   ; Can be too slow
+    PasteThis(Out)
+}
 
 ::(c)::{U+00A9}		; �
 ::(r)::{U+00AE}		; �
