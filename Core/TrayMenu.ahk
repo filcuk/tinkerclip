@@ -8,7 +8,8 @@ TrayCfg.Add("Run on startup", TrayHandler)
 Tray := A_TrayMenu
 Tray.Delete()   ; Remove default items
 Tray.Add("TinkerClip", TrayHandler)
-Tray.Add("Config", TrayCfg)
+Tray.Add("&Config", TrayCfg)
+Tray.Add("&Help", TrayHandler)
 Tray.Add()
 Tray.Add("No &Idle", TrayHandler)
 Tray.Add()
@@ -25,6 +26,7 @@ Tray.Disable("TinkerClip")
 ; === ACTIONS =============================================
 TrayHandler(Item, *) {
     Switch(Item) {
+        Case "&Help": KeyGUI.Show()
         Case "No &Idle":
             global TrayIdle
             

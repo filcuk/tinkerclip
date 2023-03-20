@@ -1,0 +1,48 @@
+msa,MS Access,,Shorthand,Hotstring
+mse,MS Excel,,Shorthand,Hotstring
+pbi,Power BI,,Shorthand,Hotstring
+date@,<yyyy-MM-dd>,,Date & time,Hotstring
+time@,<HH:mm>,,Date & time,Hotstring
+now@,<yyyy-MM-dd HH:mm>,,Date & time,Hotstring
+scr@,Screenshot <yyyy-MM-dd HHmmss>,,Files,Hotstring
+dg@,°,Degree,Units,Hotstring
+dgc@,?,Degree Celsius,Units,Hotstring
+dgf@,?,Degree Fahrenheit,Units,Hotstring
+dgk@,?,Kelvin,Units,Hotstring
+(c),©,Copyright,Misc,Hotstring
+(r),®,Registered trademark,Misc,Hotstring
+.@,·,Middle dot,Misc,Hotstring
+-@,•,Bullet,Misc,Hotstring
+>@,?,Triangle bullet,Misc,Hotstring
+--@,–,En dash,Misc,Hotstring
+---@,—,Em dash,Misc,Hotstring
+<-,?,Left arrow,Arrows,Hotstring
+->,?,Right arrow,Arrows,Hotstring
+/\,?,Up arrow,Arrows,Hotstring
+\/,?,Down arrow,Arrows,Hotstring
+<<,«,Left quotation,Arrows,Hotstring
+>>,»,Right quotation,Arrows,Hotstring
+[v],??,Ballot check,Ballots,Hotstring
+[x],?,Ballot cross,Ballots,Hotstring
+[ ],?,Ballot box,Ballots,Hotstring
+v@,?,Check,Ballots,Hotstring
+x@,?,Cross,Ballots,Hotstring
+^1,¹,Superscript 1,Reference,Hotstring
+^2,²,Superscript 2,Reference,Hotstring
+^3,³,Superscript 3,Reference,Hotstring
+^t,†,Dagger,Reference,Hotstring
+^2t,‡,Double dagger,Reference,Hotstring
+=/=,?,Not equal,Math,Hotstring
+^/,÷,Division sign,Math,Hotstring
+^x,×,Multiplication sign,Math,Hotstring
+^*,?,Asterisk operator,Math,Hotstring
++/-,±,Plus minus sign,Math,Hotstring
+~~,?,Almost equal to,Math,Hotstring
+^E,?,Sum,Math,Hotstring
+1/4,¼,1/4 fraction,Math,Hotstring
+1/2,½,1/2 fraction,Math,Hotstring
+3/4,¾,3/4 fraction,Math,Hotstring
+^d,?,Delta,Math,Hotstring
+Ctrl + Shift + u,Upper case,,Strings,Hotkey
+Ctrl + Shift + l,Lower case,,Strings,Hotkey
+Ctrl + Shift + p,Proper case,,Strings,Hotkey
