@@ -8,7 +8,7 @@ PasteThis(Text) {
     Static Clip, Tmp
 
     ; Wait for restoration to finish
-    While (Clip <> Tmp)
+    While (Clip != Tmp)
         Sleep(10)
 
     ; Preserve clipboard
@@ -22,5 +22,5 @@ PasteThis(Text) {
     Send "^v"
 
     Clipboard := Clip
-    While ()
+    ; While ()
 }

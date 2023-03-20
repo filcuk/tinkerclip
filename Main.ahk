@@ -10,6 +10,7 @@ SetWorkingDir A_ScriptDir
 #Include %A_ScriptDir%\Core	; Core libs
 #Include TrayMenu.ahk
 #Include Hotstrings.ahk
+#Include Hotkeys.ahk
 
 #Include %A_ScriptDir%\Lib ; Misc libs and fns
 #Include PasteThis.ahk
