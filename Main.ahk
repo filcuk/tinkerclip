@@ -8,10 +8,10 @@ SetWorkingDir A_ScriptDir
 
 ; === LIBRARIES ===========================================
 #Include %A_ScriptDir%\Core	; Core libs
+#Include KeyListGUI.ahk     ; Key list GUI
 #Include TrayMenu.ahk       ; Tray menu
 #Include Hotstrings.ahk     ; Hotstrings
 #Include Hotkeys.ahk        ; Hotkeys
-#Include KeyListGUI.ahk     ; Key list GUI
 #Include InsertCharGUI.ahk  ; Char insert GUI
 
 #Include %A_ScriptDir%\Lib ; Misc libs and fns

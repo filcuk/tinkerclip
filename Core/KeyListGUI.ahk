@@ -1,12 +1,6 @@
 KeyGUI := Gui("+AlwaysOnTop +ToolWindow", "TinkerClip - Help")
 
-FontNorm := "Segoe UI"
-FontNormC := "cDefault"
-FontMono := "Consolas"
-FontMonoC := "cBlue"
-
-KeyGUI.SetFont("s9 q5", FontNorm)
-KeyGUI.SetFont("bold")
+KeyGUI.SetFont("s9 q5 bold", "Segoe UI")
 KeyGUI.Add("Text", "xm section", "Hotkeys/Hotstrings")
 KeyGUI.SetFont("norm")
 
