@@ -1,6 +1,3 @@
-; https://www.autohotkey.com/docs/Hotstrings.htm
-; https://www.autohotkey.com/docs/commands/Hotstring.htm
-
 ; === OPTIONS =============================================
 ; *     Ending character is not required
 ; *0    Ending character is required (default)
@@ -25,20 +22,15 @@
 ; Z     Reset hotstring recogniser after each trigger
 ; Z0    Disable recogniser reset on trigger (default)
 
-; TODO when tere's available autocomplete, pop up a message saying: press 'tab' to complete char x
-
-#Hotstring EndChars -()[]{}':;"/\,.?!`n `t
-
-
-; TODO: Remove?
-#Hotstring C Z
+#Hotstring EndChars `n `t
+#Hotstring C
 
 ; === SHORTHAND =================================
 ::msa::MS Access
 ::mse::MS Excel
 ::pbi::Power BI
 
-; === DATE ======================================
+; === DATE & TIME ===============================
 :* X:date@::   SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
 :* X:time@::   SendInput(FormatTime(A_Now, "HH:mm"))
 :* X:now@::    SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
@@ -50,14 +42,16 @@
 :*:dgf@::{U+2109}   ; ℉
 :*:dgk@::{U+212A}   ; K
 
+:* X:unit@::InsertUnitGUI()
+
 ; === MISC ======================================
 ::(c)::{U+00A9}		; ©
 ::(r)::{U+00AE}		; ®
 :*:.@::{U+00B7}		; · (middle dot)
 :*:-@::{U+2022}		; • (bullet)
 :*:>@::{U+2023}		; ‣ (triangular bullet)
-:*:---@::{U+2014}	; Em Dash (must be before en dash)
-:*:--@::{U+2013}	; En Dash
+:*:-2@::{U+2013}	; – (en dash)
+:*:-3@::{U+2014}	; — (em dash)
 
 ; === ARROWS ====================================
 :*:<-::{U+2190}		; ←
@@ -66,12 +60,13 @@
 :*:\/::{U+2193}		; ↓
 :*:<<::{U+00AB}		; «
 :*:>>::{U+00BB}		; »
-;::<>::{U+2194}		; Left Right Arrow
-;::::{U+2195}		; Up Down Arrow
-;::::{U+2196}		; North West Arrow
-;::::{U+2197}		; North East Arrow
-;::::{U+2198}		; South East Arrow
-;::::{U+2199}		; South West Arrow
+
+:*:lra@::{U+2194}	; ↔
+:*:uda@::{U+2195}	; ↕
+:*:nwa@::{U+2196}	; ↖
+:*:nea@::{U+2197}	; ↗
+:*:sea@::{U+2198}	; ↘
+:*:swa@::{U+2199}	; ↙
 
 ; === BALLOT ====================================
 :*:[v]::{U+1F5F9}	; 🗹
@@ -86,9 +81,6 @@
 ::^3::{U+00B3}		; ³
 ::^t::{U+2020}		; †
 ::^2t::{U+2021}		; ‡
-
-; https://unicode-table.com/en/sets/unit-symbols/
-; TODO
 
 ; === MATH ======================================
 ; https://unicode-table.com/en/sets/mathematical-signs/
