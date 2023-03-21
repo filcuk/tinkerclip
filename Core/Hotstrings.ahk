@@ -108,11 +108,5 @@
 #Hotstring *0 ?0 C0 Z0 O0
 
 ; Markdown URL source inserter
-; TODO: Fix RegEx function
-:*:source@:: {
-    URL := A_Clipboard
-    RegExMatch(A_Clipboard, "^(?:https?:)?(?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)(?)", &Out)
-    Out := "[" Out[1] "](" URL ")"
-    ; SendInput % Out   ; Can be too slow
-    PasteThis(Out)
-}
+:* X:source@::SendInstant(MD_SourceLink(A_Clipboard))
+:* X:sourcef@::SendInstant("Source: " . MD_SourceLink(A_Clipboard))

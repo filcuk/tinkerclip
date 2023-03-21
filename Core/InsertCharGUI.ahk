@@ -1,3 +1,5 @@
+; TODO: Add filter (by description, category)
+
 InsertCharGUI(Category) {
     CharGUI := Gui("+AlwaysOnTop +ToolWindow", "TinkerClip - Insert")
     CharGUI.SetFont("s9 q5", "Segoe UI")

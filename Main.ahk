@@ -15,7 +15,8 @@ SetWorkingDir A_ScriptDir
 #Include InsertCharGUI.ahk  ; Char insert GUI
 
 #Include %A_ScriptDir%\Lib ; Misc libs and fns
-#Include PasteThis.ahk
+#Include MD_SourceLink.ahk
+#Include SendInstant.ahk
 #Include MouseWiggle.ahk
 #Include ExcelModalTerminator.ahk
 
