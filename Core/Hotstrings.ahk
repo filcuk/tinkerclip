@@ -42,7 +42,7 @@
 :*:dgf@::{U+2109}   ; ℉
 :*:dgk@::{U+212A}   ; K
 
-:* X:unit@::InsertUnitGUI()
+:* X:unit@::InsertCharGUI("units")
 
 ; === MISC ======================================
 ::(c)::{U+00A9}		; ©

@@ -1,0 +1,107 @@
+﻿3373,㍳,Astronomical unit,"Length, Area"
+3376,㍶,Parsec,"Length, Area"
+3377,㍷,Decimeter,"Length, Area"
+3399,㎙,Femtometre,"Length, Area"
+339A,㎚,Nanometer,"Length, Area"
+339B,㎛,Micrometer,"Length, Area"
+339C,㎜,Millimeter,"Length, Area"
+339D,㎝,Centimeter,"Length, Area"
+339E,㎞,Kilometer,"Length, Area"
+33CC,㏌,Inch,"Length, Area"
+3378,㍸,Square meter,"Length, Area"
+339F,㎟,Square millimeter,"Length, Area"
+33A0,㎠,Square centimeter,"Length, Area"
+33A1,㎡,Square meter,"Length, Area"
+33A2,㎢,Square kilometer,"Length, Area"
+33CA,㏊,Hectare,"Length, Area"
+33FF,㏿,Gallon,Volume
+3379,㍹,Cubic meter,Volume
+3395,㎕,Microliter,Volume
+3396,㎖,Milliliter,Volume
+3397,㎗,Deciliter,Volume
+3398,㎘,Kilo-liter,Volume
+33A3,㎣,Cubic millimeter,Volume
+33A4,㎤,Cubic centimeter,Volume
+33A5,㎥,Cubic meter,Volume
+33A6,㎦,Cubic kilometer,Volume
+33C4,㏄,Cubic centimeter,Volume
+33A7,㎧,Metre per second,"Speed, Acceleration"
+33AE,㎮,Radian per second,"Speed, Acceleration"
+33A8,㎨,Metre per second squared,"Speed, Acceleration"
+33AF,㎯,Angular acceleration,"Speed, Acceleration"
+2126,Ω,Ohm,Electrical
+33C0,㏀,Kilo-ohm,Electrical
+33C1,㏁,Mega-ohm,Electrical
+33B4,㎴,Picovolt,Electrical
+33B5,㎵,Nanovolt,Electrical
+33B6,㎶,Microvolt,Electrical
+33B7,㎷,Millivolt,Electrical
+33B8,㎸,Kilovolt,Electrical
+33B9,㎹,Megavolt,Electrical
+33DE,㏞,Volt per meter,Electrical
+3380,㎀,Picoampere,Electrical
+3381,㎁,Nanoampere,Electrical
+3382,㎂,Microampere,Electrical
+3383,㎃,Milliampere,Electrical
+3384,㎄,Kiloampere,Electrical
+33DF,㏟,Ampere per meter,Electrical
+33DD,㏝,Weber,"Magnetic, Capacitance"
+338A,㎊,Picofarad,"Magnetic, Capacitance"
+338B,㎋,Nanofarad,"Magnetic, Capacitance"
+338C,㎌,Microfarad,"Magnetic, Capacitance"
+3385,㎅,Kilobyte,Byte
+3386,㎆,Megabyte,Byte
+3387,㎇,Gigabyte,Byte
+3390,㎐,Hertz,Frequency
+3391,㎑,Kilohertz,Frequency
+3392,㎒,Megahertz,Frequency
+3393,㎓,Gigahertz,Frequency
+3394,㎔,Terahertz,Frequency
+338D,㎍,Microgram,Mass
+338E,㎎,Milligram,Mass
+338F,㎏,Kilogram,Mass
+33BA,㎺,Picowatt,Power
+33BB,㎻,Nanowatt,Power
+33BC,㎼,Microwatt,Power
+33BD,㎽,Milliwatt,Power
+33BE,㎾,Kilowatts,Power
+33BF,㎿,Megawatt,Power
+33CB,㏋,Horsepower,Power
+3371,㍱,Hectopascal,Pressure
+3374,㍴,Bar,Pressure
+33A9,㎩,Pascal,Pressure
+33AA,㎪,Kilopascal,Pressure
+33AB,㎫,Megapascal,Pressure
+33AC,㎬,Gigapascal,Pressure
+33B0,㎰,Picosecond,Time
+33B1,㎱,Nanosecond,Time
+33B2,㎲,Microsecond,Time
+33B3,㎳,Milisecond,Time
+33C2,㏂,Ante meridiem,Time
+33D8,㏘,Post meridiem,Time
+3388,㎈,Calorie,Misc
+3389,㎉,Kilo-calorie,Misc
+33C5,㏅,Candela,Misc
+33D0,㏐,Lumen,Misc
+33D3,㏓,Lux,Misc
+33AD,㎭,Radian,Misc
+33DB,㏛,Square radian,Misc
+3372,㍲,Deca,Misc
+3375,㍵,,Misc
+337A,㍺,,Misc
+33C7,㏇,Company,Misc
+33C8,㏈,Decibel,Misc
+33CD,㏍,Kabushiki gaisha (business corporation),Misc
+33CE,㏎,,Misc
+33CF,㏏,Katal,Misc
+33D1,㏑,Natural logarithm,Misc
+33D2,㏒,Logarithm,Misc
+33D5,㏕,,Misc
+33D6,㏖,Mole,Misc
+33D7,㏗,,Misc
+33DA,㏚,,Misc
+33C3,㏃,Becquerel,Misc
+33C6,㏆,Coulomb/kilogram,Misc
+33C9,㏉,Gray,Misc
+33DC,㏜,Sievert,Misc
+33D9,㏙,Parts-per notation,Misc
