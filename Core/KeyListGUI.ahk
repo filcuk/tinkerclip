@@ -10,10 +10,8 @@ KeyGUI.SetFont("bold")
 KeyGUI.Add("Text", "xm section", "Hotkeys/Hotstrings")
 KeyGUI.SetFont("norm")
 
-; Add key ListView
 KeyLV := KeyGUI.AddListView("r26 w620", ["ID", "Input", "Output", "Description", "Group", "Category"])
 
-; Parse from file
 ID := 0
 Loop Read "Core\KeyList.csv" {
     Field := Array()
@@ -24,6 +22,5 @@ Loop Read "Core\KeyList.csv" {
     KeyLV.Add(, ID, Field[1], Field[2], Field[3], Field[4], Field[5])
 }
 
-; Finalise
 KeyLV.ModifyCol()               ; Autofit columns
 KeyLV.ModifyCol(1, "Integer")   ; For sorting purposes
