@@ -14,6 +14,7 @@ SetWorkingDir A_ScriptDir
 #Include KeyListGUI.ahk     ; Key list GUI
 
 #Include %A_ScriptDir%\Lib ; Misc libs and fns
+#Include InsertUnitGUI.ahk
 #Include PasteThis.ahk
 #Include MouseWiggle.ahk
 #Include ExcelModalTerminator.ahk

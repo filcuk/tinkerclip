@@ -1,0 +1,107 @@
+﻿㍳,Astronomical unit,"Length, Area"
+㍶,Parsec,"Length, Area"
+㍷,Decimeter,"Length, Area"
+㎙,Femtometre,"Length, Area"
+㎚,Nanometer,"Length, Area"
+㎛,Micrometer,"Length, Area"
+㎜,Millimeter,"Length, Area"
+㎝,Centimeter,"Length, Area"
+㎞,Kilometer,"Length, Area"
+㏌,Inch,"Length, Area"
+㍸,Square meter,"Length, Area"
+㎟,Square millimeter,"Length, Area"
+㎠,Square centimeter,"Length, Area"
+㎡,Square meter,"Length, Area"
+㎢,Square kilometer,"Length, Area"
+㏊,Hectare,"Length, Area"
+㏿,Gallon,Volume
+㍹,Cubic meter,Volume
+㎕,Microliter,Volume
+㎖,Milliliter,Volume
+㎗,Deciliter,Volume
+㎘,Kilo-liter,Volume
+㎣,Cubic millimeter,Volume
+㎤,Cubic centimeter,Volume
+㎥,Cubic meter,Volume
+㎦,Cubic kilometer,Volume
+㏄,Cubic centimeter,Volume
+㎧,Metre per second,"Speed, Acceleration"
+㎮,Radian per second,"Speed, Acceleration"
+㎨,Metre per second squared,"Speed, Acceleration"
+㎯,Angular acceleration,"Speed, Acceleration"
+Ω,Ohm,Electrical
+㏀,Kilo-ohm,Electrical
+㏁,Mega-ohm,Electrical
+㎴,Picovolt,Electrical
+㎵,Nanovolt,Electrical
+㎶,Microvolt,Electrical
+㎷,Millivolt,Electrical
+㎸,Kilovolt,Electrical
+㎹,Megavolt,Electrical
+㏞,Volt per meter,Electrical
+㎀,Picoampere,Electrical
+㎁,Nanoampere,Electrical
+㎂,Microampere,Electrical
+㎃,Milliampere,Electrical
+㎄,Kiloampere,Electrical
+㏟,Ampere per meter,Electrical
+㏝,Weber,"Magnetic, Capacitance"
+㎊,Picofarad,"Magnetic, Capacitance"
+㎋,Nanofarad,"Magnetic, Capacitance"
+㎌,Microfarad,"Magnetic, Capacitance"
+㎅,Kilobyte,Byte
+㎆,Megabyte,Byte
+㎇,Gigabyte,Byte
+㎐,Hertz,Frequency
+㎑,Kilohertz,Frequency
+㎒,Megahertz,Frequency
+㎓,Gigahertz,Frequency
+㎔,Terahertz,Frequency
+㎍,Microgram,Mass
+㎎,Milligram,Mass
+㎏,Kilogram,Mass
+㎺,Picowatt,Power
+㎻,Nanowatt,Power
+㎼,Microwatt,Power
+㎽,Milliwatt,Power
+㎾,Kilowatts,Power
+㎿,Megawatt,Power
+㏋,Horsepower,Power
+㍱,Hectopascal,Pressure
+㍴,Bar,Pressure
+㎩,Pascal,Pressure
+㎪,Kilopascal,Pressure
+㎫,Megapascal,Pressure
+㎬,Gigapascal,Pressure
+㎰,Picosecond,Time
+㎱,Nanosecond,Time
+㎲,Microsecond,Time
+㎳,Milisecond,Time
+㏂,Ante meridiem,Time
+㏘,Post meridiem,Time
+㎈,Calorie,Misc
+㎉,Kilo-calorie,Misc
+㏅,Candela,Misc
+㏐,Lumen,Misc
+㏓,Lux,Misc
+㎭,Radian,Misc
+㏛,Square radian,Misc
+㍲,Deca,Misc
+㍵,,Misc
+㍺,,Misc
+㏇,Company,Misc
+㏈,Decibel,Misc
+㏍,Kabushiki gaisha (business corporation),Misc
+㏎,,Misc
+㏏,Katal,Misc
+㏑,Natural logarithm,Misc
+㏒,Logarithm,Misc
+㏕,,Misc
+㏖,Mole,Misc
+㏗,,Misc
+㏚,,Misc
+㏃,Becquerel,Misc
+㏆,Coulomb/kilogram,Misc
+㏉,Gray,Misc
+㏜,Sievert,Misc
+㏙,Parts-per notation,Misc
