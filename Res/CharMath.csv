@@ -1,0 +1,343 @@
+﻿002B,+,Plus sign,Arithmetic
+2212,−,Minus sign,Arithmetic
+00B1,±,Plus-minus sign,Arithmetic
+2213,∓,Minus-or-plus sign,Arithmetic
+00F7,÷,Division sign,Arithmetic
+2217,∗,Asterisk operator,Arithmetic
+2219,∙,Bullet operator,Arithmetic
+00D7,×,Multiplication sign,Arithmetic
+2211,∑,N-ary summation,Arithmetic
+2A0A,⨊,Modulo two sum,Arithmetic
+2140,⅀,Double-struck n-ary summation,Arithmetic
+220F,∏,N-ary product,Arithmetic
+2210,∐,N-ary coproduct,Arithmetic
+2214,∔,Dot plus,Arithmetic
+2238,∸,Dot minus,Arithmetic
+2242,≂,Minus tilde,Arithmetic
+2295,⊕,Circled plus,Arithmetic
+2296,⊖,Circled minus,Arithmetic
+2297,⊗,Circled times,Arithmetic
+2298,⊘,Circled division slash,Arithmetic
+2299,⊙,Circled dot operator,Arithmetic
+229A,⊚,Circled ring operator,Arithmetic
+229B,⊛,Circled asterisk operator,Arithmetic
+229D,⊝,Circled dash,Arithmetic
+229E,⊞,Squared plus,Arithmetic
+229F,⊟,Squared minus,Arithmetic
+22A0,⊠,Squared times,Arithmetic
+22A1,⊡,Squared dot operator,Arithmetic
+22C4,⋄,Diamond operator,Arithmetic
+22C7,⋇,Division times,Arithmetic
+22C6,⋆,Star operator,Arithmetic
+22CB,⋋,Left semidirect product,Arithmetic
+22CC,⋌,Right semidirect product,Arithmetic
+007E,~,Tilde,Arithmetic
+2A71,⩱,Equals sign above plus sign,Arithmetic
+2A72,⩲,Plus sign above equals sign,Arithmetic
+0394,Δ,Greek capital letter delta,Arithmetic
+2200,∀,For all,Various
+221E,∞,Infinity,Various
+2203,∃,There exists,Various
+2204,∄,There does not exist,Various
+007C,|,Vertical line,Various
+2224,∤,Does not divide,Various
+2031,‱,Per ten thousand sign,Various
+2207,∇,Nabla,Various
+2218,∘,Ring operator,Various
+223B,∻,Homothetic,Various
+223D,∽,Reversed tilde,Various
+223E,∾,Inverted lazy s,Various
+223F,∿,Sine wave,Various
+2240,≀,Wreath product,Various
+2241,≁,Not tilde,Various
+226C,≬,Between,Various
+228F,⊏,Square image of,Various
+2290,⊐,Square original of,Various
+2291,⊑,Square image of or equal to,Various
+2292,⊒,Square original of or equal to,Various
+22E2,⋢,For all,Various
+22E3,⋣,Not square original of or equal to,Various
+2293,⊓,Square cap,Various
+2294,⊔,Square cup,Various
+22B6,⊶,Original of,Various
+22B7,⊷,Image of,Various
+22B8,⊸,Multimap,Various
+22B9,⊹,Hermitian conjugate matrix,Various
+22BA,⊺,Intercalate,Various
+22C8,⋈,Bowtie,Various
+22C9,⋉,Left normal factor semidirect product,Various
+22CA,⋊,Right normal factor semidirect product,Various
+22EE,⋮,Vertical ellipsis,Various
+22EF,⋯,Midline horizontal ellipsis,Various
+22F0,⋰,Up right diagonal ellipsis,Various
+22F1,⋱,Down right diagonal ellipsis,Various
+2308,⌈,Left ceiling,Various
+2309,⌉,Right ceiling,Various
+230A,⌊,Left floor,Various
+230B,⌋,Right floor,Various
+2329,〈,Left-pointing angle bracket,Various
+232A,〉,Right-pointing angle bracket,Various
+22B2,⊲,Normal subgroup of,Various
+22B3,⊳,Contains as normal subgroup,Various
+22B4,⊴,Normal subgroup of or equal to,Various
+22B5,⊵,Contains as normal subgroup or equal to,Various
+22EA,⋪,Not normal subgroup of,Various
+22EB,⋫,Does not contain as normal subgroup,Various
+22EC,⋬,Not normal subgroup of or equal to,Various
+22ED,⋭,Does not contain as normal subgroup or equal,Various
+2260,≠,Not equal to,Equality
+2248,≈,Almost equal to,Equality
+2242,≂,Minus tilde,Equality
+2243,≃,Asymptotically equal to,Equality
+2244,≄,Not asymptotically equal to,Equality
+22CD,⋍,Reversed tilde equals,Equality
+2245,≅,Approximately equal to,Equality
+2246,≆,Approximately but not actually equal to,Equality
+2247,≇,Neither approximately nor actually equal to,Equality
+2249,≉,Not almost equal to,Equality
+224A,≊,Almost equal or equal to,Equality
+224B,≋,Triple tilde,Equality
+224C,≌,All equal to,Equality
+224D,≍,Equivalent to,Equality
+224E,≎,Geometrically equivalent to,Equality
+224F,≏,Difference between,Equality
+2250,≐,Approaches the limit,Equality
+2251,≑,Geometrically equal to,Equality
+2252,≒,Approximately equal to or the image of,Equality
+2253,≓,Image of or approximately equal to,Equality
+2254,≔,Colon equals,Equality
+2255,≕,Equals colon,Equality
+2256,≖,Ring in equal to,Equality
+2257,≗,Ring equal to,Equality
+2259,≙,Estimates,Equality
+225A,≚,Equiangular to,Equality
+225C,≜,Delta equal to,Equality
+225F,≟,Questioned equal to,Equality
+2261,≡,Identical to,Equality
+2262,≢,Not identical to,Equality
+226D,≭,Not equivalent to,Equality
+22D5,⋕,Equal and parallel to,Equality
+005E,^,Circumflex accent,Degrees and roots
+2070,⁰,Superscript zero,Degrees and roots
+00B9,¹,Superscript one,Degrees and roots
+00B2,²,Superscript two,Degrees and roots
+00B3,³,Superscript three,Degrees and roots
+2074,⁴,Superscript four,Degrees and roots
+2075,⁵,Superscript five,Degrees and roots
+2076,⁶,Superscript six,Degrees and roots
+2077,⁷,Superscript seven,Degrees and roots
+2078,⁸,Superscript eight,Degrees and roots
+2079,⁹,Superscript nine,Degrees and roots
+207A,⁺,Superscript plus sign,Degrees and roots
+207B,⁻,Superscript minus,Degrees and roots
+207C,⁼,Superscript equals sign,Degrees and roots
+207D,⁽,Superscript left parenthesis,Degrees and roots
+207E,⁾,Superscript right parenthesis,Degrees and roots
+221A,√,Square root,Degrees and roots
+221B,∛,Cube root,Degrees and roots
+221C,∜,Fourth root,Degrees and roots
+003C,<,Less-than sign,Comparison
+003E,>,Greater-than sign,Comparison
+2264,≤,Less-than or equal to,Comparison
+2265,≥,Greater-than or equal to,Comparison
+2266,≦,Less-than over equal to,Comparison
+2267,≧,Greater-than over equal to,Comparison
+2268,≨,Less-than but not equal to,Comparison
+2269,≩,Greater-than but not equal to,Comparison
+226A,≪,Much less-than,Comparison
+226B,≫,Much greater-than,Comparison
+226E,≮,Not less-than,Comparison
+226F,≯,Not greater-than,Comparison
+2270,≰,Neither less-than nor equal to,Comparison
+2271,≱,Neither greater-than nor equal to,Comparison
+2272,≲,Less-than or equivalent to,Comparison
+2273,≳,Greater-than or equivalent to,Comparison
+2274,≴,Neither less-than nor equivalent to,Comparison
+2275,≵,Neither greater-than nor equivalent to,Comparison
+2276,≶,Less-than or greater-than,Comparison
+2277,≷,Greater-than or less-than,Comparison
+2278,≸,Neither less-than nor greater-than,Comparison
+2279,≹,Neither greater-than nor less-than,Comparison
+227A,≺,Precedes,Comparison
+227B,≻,Succeeds,Comparison
+227C,≼,Precedes or equal to,Comparison
+227D,≽,Succeeds or equal to,Comparison
+227E,≾,Precedes or equivalent to,Comparison
+227F,≿,Succeeds or equivalent to,Comparison
+2280,⊀,Does not precede,Comparison
+2281,⊁,Does not succeed,Comparison
+22B0,⊰,Precedes under relation,Comparison
+22D6,⋖,Less-than with dot,Comparison
+22D7,⋗,Greater-than with dot,Comparison
+22D8,⋘,Very much less-than,Comparison
+22D9,⋙,Very much greater-than,Comparison
+22DA,⋚,Less-than equal to or greater-than,Comparison
+22DB,⋛,Greater-than equal to or less-than,Comparison
+22DE,⋞,Equal to or precedes,Comparison
+22DF,⋟,Equal to or succeeds,Comparison
+22E0,⋠,Quotation mark,Comparison
+22E1,⋡,Latin capital letter n with long right leg,Comparison
+22E6,⋦,Less-than but not equivalent to,Comparison
+22E7,⋧,Greater-than but not equivalent to,Comparison
+22E8,⋨,Precedes but not equivalent to,Comparison
+22E9,⋩,Succeeds but not equivalent to,Comparison
+222B,∫,Integral,Integrals
+222C,∬,Double integral,Integrals
+222D,∭,Triple integral,Integrals
+222E,∮,Contour integral,Integrals
+222F,∯,Surface integral,Integrals
+2230,∰,Volume integral,Integrals
+2231,∱,Clockwise integral,Integrals
+2232,∲,Clockwise contour integral,Integrals
+2233,∳,Anticlockwise contour integral,Integrals
+2A0C,⨌,Quadruple integral operator,Integrals
+2A0D,⨍,Finite part integral,Integrals
+2A0E,⨎,Integral with double stroke,Integrals
+2A0F,⨏,Integral average with slash,Integrals
+2A10,⨐,Circulation function,Integrals
+2A11,⨑,Anticlockwise integration,Integrals
+2A12,⨒,Line integration with rectangular path around pole,Integrals
+2A13,⨓,Line integration with semicircular path around pole,Integrals
+2A14,⨔,Line integration not including the pole,Integrals
+2A15,⨕,Integral around a point operator,Integrals
+2A16,⨖,Quaternion integral operator,Integrals
+2A17,⨗,Integral with leftwards arrow with hook,Integrals
+2A18,⨘,Integral with times sign,Integrals
+2A19,⨙,Integral with intersection,Integrals
+2A1A,⨚,Integral with union,Integrals
+2A1B,⨛,Integral with overbar,Integrals
+2A1C,⨜,Integral with underbar,Integrals
+2300,⌀,Diameter sign,Geometric
+2220,∠,Angle,Geometric
+2221,∡,Measured angle,Geometric
+2222,∢,Spherical angle,Geometric
+299B,⦛,Measured angle opening left,Geometric
+299C,⦜,Right angle variant with square,Geometric
+299D,⦝,Measured right angle with dot,Geometric
+299E,⦞,Angle with s inside,Geometric
+299F,⦟,Acute angle,Geometric
+29A0,⦠,Spherical angle opening left,Geometric
+29A1,⦡,Spherical angle opening up,Geometric
+29A2,⦢,Turned angle,Geometric
+29A3,⦣,Reversed angle,Geometric
+00B0,°,Degree sign,Geometric
+27C2,⟂,Perpendicular,Geometric
+23CA,⏊,Dentistry symbol light up and horizontal,Geometric
+22A5,⊥,Up tack,Geometric
+2225,∥,Parallel to,Geometric
+2226,∦,Not parallel to,Geometric
+221D,∝,Proportional to,Geometric
+221F,∟,Right angle,Geometric
+223A,∺,Geometric proportion,Geometric
+2245,≅,Approximately equal to,Geometric
+22BE,⊾,Right angle with arc,Geometric
+22D5,⋕,Equal and parallel to,Geometric
+2312,⌒,Arc,Figures
+25E0,◠,Percent sign,Figures
+25E1,◡,Latin small letter turned a,Figures
+22BF,⊿,Right triangle,Figures
+25B3,△,White up-pointing triangle,Figures
+25B7,▷,White right-pointing triangle,Figures
+25BD,▽,White down-pointing triangle,Figures
+25C1,◁,White left-pointing triangle,Figures
+25A1,□,White square,Figures
+25AD,▭,White rectangle,Figures
+25B1,▱,White parallelogram,Figures
+25CB,○,White circle,Figures
+25CA,◊,Lozenge,Figures
+22C4,⋄,Diamond operator,Figures
+2192,→,Rightwards arrow,Logical
+2190,←,Leftwards arrow,Logical
+219B,↛,Rightwards arrow with stroke,Logical
+219A,↚,Leftwards arrow with stroke,Logical
+2193,↓,Downwards arrow,Logical
+21D2,⇒,Rightwards double arrow,Logical
+21D0,⇐,Leftwards double arrow,Logical
+21D4,⇔,Left right double arrow,Logical
+21CB,⇋,Leftwards harpoon over rightwards harpoon,Logical
+21AF,↯,Downwards zigzag arrow,Logical
+21CF,⇏,Rightwards double arrow with stroke,Logical
+2227,∧,Logical and,Logical
+2228,∨,Logical or,Logical
+22C0,⋀,N-ary logical and,Logical
+22C1,⋁,N-ary logical or,Logical
+22C2,⋂,N-ary intersection,Logical
+22C3,⋃,N-ary union,Logical
+00AC,¬,Not sign,Logical
+2261,≡,Identical to,Logical
+2234,∴,Therefore,Logical
+2235,∵,Because,Logical
+2236,∶,Ratio,Logical
+2237,∷,Proportion,Logical
+223C,∼,Tilde operator,Logical
+22A7,⊧,Models,Logical
+22A2,⊢,Right tack,Logical
+22A3,⊣,Left tack,Logical
+22A4,⊤,Down tack,Logical
+22A5,⊥,Up tack,Logical
+22A8,⊨,True,Logical
+22A9,⊩,Forces,Logical
+22AA,⊪,Triple vertical bar right turnstile,Logical
+22AB,⊫,Double vertical bar double right turnstile,Logical
+22AC,⊬,Does not prove,Logical
+22AD,⊭,Not true,Logical
+22AE,⊮,Does not force,Logical
+22AF,⊯,Negated double vertical bar double right turnstile,Logical
+22BB,⊻,Xor,Logical
+22BD,⊽,Nor,Logical
+22CE,⋎,Curly logical or,Logical
+22CF,⋏,Curly logical and,Logical
+0192,ƒ,Latin small letter f with hook,Letters
+2202,∂,Partial differential,Letters
+1D6DB,𝛛,Mathematical bold partial differential,Letters
+1D715,𝜕,Mathematical italic partial differential,Letters
+1D74F,𝝏,Mathematical bold italic partial differential,Letters
+1D789,𝞉,Mathematical sans-serif bold partial differential,Letters
+1D7C3,𝟃,Mathematical sans-serif bold italic partial differential,Letters
+2135,ℵ,Alef symbol,Letters
+2136,ℶ,Bet symbol,Letters
+2115,ℕ,Double-struck capital n,Letters
+211D,ℝ,Double-struck capital r,Letters
+211A,ℚ,Double-struck capital q,Letters
+2119,ℙ,Double-struck capital p,Letters
+2124,ℤ,Double-struck capital z,Letters
+210D,ℍ,Double-struck capital h,Letters
+2102,ℂ,Double-struck capital c,Letters
+2205,∅,Empty set,Sets
+2201,∁,Complement,Sets
+2208,∈,Element of,Sets
+2209,∉,Not an element of,Sets
+220B,∋,Contains as member,Sets
+220C,∌,Does not contain as member,Sets
+2216,∖,Set minus,Sets
+2229,∩,Intersection,Sets
+222A,∪,Union,Sets
+2282,⊂,Subset of,Sets
+2283,⊃,Superset of,Sets
+2284,⊄,Not a subset of,Sets
+2285,⊅,Not a superset of,Sets
+2286,⊆,Subset of or equal to,Sets
+2287,⊇,Superset of or equal to,Sets
+2288,⊈,Neither a subset of nor equal to,Sets
+2289,⊉,Neither a superset of nor equal to,Sets
+228A,⊊,Subset of with not equal to,Sets
+228B,⊋,Superset of with not equal to,Sets
+228D,⊍,Multiset multiplication,Sets
+228E,⊎,Multiset union,Sets
+22D0,⋐,Double subset,Sets
+22D1,⋑,Double superset,Sets
+22D2,⋒,Double intersection,Sets
+22D3,⋓,Double union,Sets
+22D4,⋔,Pitchfork,Sets
+22F2,⋲,Element of with long horizontal stroke,Sets
+22F3,⋳,Element of with vertical bar at end of horizontal stroke,Sets
+22F4,⋴,Small element of with vertical bar at end of horizontal stroke,Sets
+22F5,⋵,Element of with dot above,Sets
+22F6,⋶,Element of with overbar,Sets
+22F7,⋷,Small element of with overbar,Sets
+22F9,⋹,Element of with two horizontal strokes,Sets
+22FA,⋺,Contains with long horizontal stroke,Sets
+22FB,⋻,Contains with vertical bar at end of horizontal stroke,Sets
+22FC,⋼,Small contains with vertical bar at end of horizontal stroke,Sets
+22FD,⋽,Contains with overbar,Sets
+22FE,⋾,Small contains with overbar,Sets

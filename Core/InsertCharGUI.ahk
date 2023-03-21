@@ -8,8 +8,10 @@ InsertCharGUI(Category) {
     
     ; Select char group
     Switch Category, False {
-        Case "units":
-        File := "Res\CharUnits.csv"
+        Case "unit":
+            File := "Res\CharUnit.csv"
+        Case "math":
+            File := "Res\CharMath.csv"
     }
 
     ; Parse from file

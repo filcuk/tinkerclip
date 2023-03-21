@@ -25,6 +25,9 @@
 #Hotstring EndChars `n `t
 #Hotstring C
 
+:* X:unit@::InsertCharGUI("unit")
+:* X:math@::InsertCharGUI("math")
+
 ; === SHORTHAND =================================
 ::msa::MS Access
 ::mse::MS Excel
@@ -41,8 +44,6 @@
 :*:dgc@::{U+2103}   ; ℃
 :*:dgf@::{U+2109}   ; ℉
 :*:dgk@::{U+212A}   ; K
-
-:* X:unit@::InsertCharGUI("units")
 
 ; === MISC ======================================
 ::(c)::{U+00A9}		; ©
