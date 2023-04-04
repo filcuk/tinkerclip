@@ -92,6 +92,8 @@
 
 ; :*:-/+::{U+2213}	; ∓ (minus-or-plus sign)
 :*:+/-::{U+00B1}	; ± (plus minus sign)
+:*:<=::{U+2264}     ; ≤ (less-than or equal to)
+:*:>=::{U+2265}     ; ≥ (greater-than or equal to)
 :*:~~::{U+2248}     ; ≈ (almost equal to)
 ; ::-~::{U+2242}	  ; ≂ (minus tilde)
 ; ::~-::{U+2248}      ; ≃ (asymptotically equal to)
