@@ -20,22 +20,31 @@ SelectionConvertCase(ToCase) {
     }
     
     Selection := A_Clipboard
+
+    If (StrLen(Selection) > 60)
+        Ans := MsgBox("Convert long selection case?", "TinkerClip - Convert Case", 4385)
+    Else
+        Ans := "OK"
+
+    If Ans = "OK" {
     
-    ; Convert input
-    Switch ToCase, False {
-        Case "u", "upper":
-            NewCase := StrUpper(Selection)
-        Case "l", "lower":
-            NewCase := StrLower(Selection)
-        Case "p", "proper", "t", "title":
-            NewCase := StrTitle(Selection)
-        Default:
-            NewCase := Selection
+        ; Convert input
+        Switch ToCase, False {
+            Case "u", "upper":
+                NewCase := StrUpper(Selection)
+            Case "l", "lower":
+                NewCase := StrLower(Selection)
+            Case "p", "proper", "t", "title":
+                NewCase := StrTitle(Selection)
+            Default:
+                NewCase := Selection
+        }
+        
+        ; Write out input
+        SendInput("{Raw}" NewCase)
+        
     }
-    
-    ; Write out input
-    SendInput("{Raw}" NewCase)
-    
+
     ; Restore clipboard
     A_Clipboard := ClipBak
     While (A_Clipboard != ClipBak)
