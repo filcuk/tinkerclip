@@ -37,6 +37,7 @@
 :* X:date@::   SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
 :* X:time@::   SendInput(FormatTime(A_Now, "HH:mm"))
 :* X:now@::    SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
+:* X:timestamp@::    SendInput(FormatTime(A_Now, "yyyyMMddHHmmss"))
 :* X:scr@::    SendInput("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd HHmmss"))
 
 ; === UNITS =====================================
