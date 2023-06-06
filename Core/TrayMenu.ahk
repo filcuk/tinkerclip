@@ -3,6 +3,7 @@ AutoStartLnk := A_Startup . "\TinkerClip.lnk"
 AutoStart := (False Or FileExist(AutoStartLnk))
 TrayIdle := False
 Suspended := False
+AppWinKey := True
 
 ; === MENU ITEMS ==========================================
 
@@ -15,9 +16,11 @@ Tray := A_TrayMenu
 Tray.Delete()   ; Remove default items
 Tray.Add("TinkerClip", TrayHandler)
 Tray.Add("&Config", TrayCfg)
+; Tray.Add("&Options", TrayOpt)
 Tray.Add("&Help", TrayHandler)
 Tray.Add()
 Tray.Add("No &Idle", TrayHandler)
+Tray.Add("App → &Win key", TrayHandler)
 Tray.Add()
 Tray.Add("&Suspend", TrayHandler)
 Tray.Add("&Reload", TrayHandler)
@@ -31,6 +34,7 @@ Tray.Disable("TinkerClip")
 ; SwitchSuspend(Suspended)
 SwitchIdle(TrayIdle)
 SwitchAutoStart(AutoStart)
+SwitchAppWinKey(AppWinKey)
 
 ; === ACTIONS =============================================
 TrayHandler(Item, *) {
@@ -38,6 +42,7 @@ TrayHandler(Item, *) {
         Case "&Help": KeyGUI.Show()
         Case "Run on startup": SwitchAutoStart(Not AutoStart)
         Case "No &Idle": SwitchIdle(Not TrayIdle)
+        Case "App → &Win key": SwitchAppWinKey(Not AppWinKey)
         Case "&Suspend": SwitchSuspend(Not Suspended)
         Case "&Reload": Reload()
         Case "&Exit": ExitApp()
@@ -58,6 +63,13 @@ SwitchIdle(State) {
     
     TrayIdle := State
     MenuToggleCheck(Tray, "No &Idle", State)
+}
+
+SwitchAppWinKey(State) {
+    Global AppWinKey
+    
+    AppWinKey := State
+    MenuToggleCheck(Tray, "App → &Win key", State)
 }
 
 SwitchAutoStart(State) {

@@ -1,3 +1,6 @@
+; Change Apps key to Win key
+#HotIf AppWinKey
+AppsKey::RWin
 
 ; Convert selected text to upper/lower/proper case
 ^+u::SelectionConvertCase("u")
