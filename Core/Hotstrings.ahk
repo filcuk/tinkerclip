@@ -28,6 +28,9 @@
 :* X:unit@::InsertCharGUI("unit")
 :* X:math@::InsertCharGUI("math")
 
+; === HACKS =====================================
+::invpbi@::{U+00AD}	; (soft hyphen) - invisible but not truncated in Power BI
+
 ; === SHORTHAND =================================
 ::msa::MS Access
 ::mse::MS Excel
