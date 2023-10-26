@@ -3,9 +3,9 @@
 AppsKey::RWin
 
 ; Convert selected text to upper/lower/proper case
-^+u::SelectionConvertCase("u")
-^+l::SelectionConvertCase("l")
-^+p::SelectionConvertCase("p")
+^#+u::SelectionConvertCase("u")
+^#+l::SelectionConvertCase("l")
+^#+p::SelectionConvertCase("p")
 
 SelectionConvertCase(ToCase) {
 
