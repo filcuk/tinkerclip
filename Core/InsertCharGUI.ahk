@@ -15,6 +15,8 @@ InsertCharGUI(Category) {
 
     ; Select char group
     Switch Category, False {
+        Case "symb":
+            File := "Res\CharSymbol.csv"
         Case "unit":
             File := "Res\CharUnit.csv"
         Case "math":

@@ -27,6 +27,7 @@
 
 :* X:unit@::InsertCharGUI("unit")
 :* X:math@::InsertCharGUI("math")
+:* X:symb@::InsertCharGUI("symb")
 
 ; === HACKS =====================================
 :*:invpbi@::{U+00AD}	; (soft hyphen) - invisible but not truncated in Power BI
