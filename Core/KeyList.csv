@@ -1,4 +1,7 @@
-﻿msa,MS Access,,Shorthand,Hotstring
+﻿symb@,Insert Symbol,,UI,Hotstring
+unit@,Insert Unit,,UI,Hotstring
+math@,Insert Math,,UI,Hotstring
+msa,MS Access,,Shorthand,Hotstring
 mse,MS Excel,,Shorthand,Hotstring
 pbi,Power BI,,Shorthand,Hotstring
 date@,<yyyy-MM-dd>,,Date & time,Hotstring
@@ -46,10 +49,10 @@ x@,✗,Cross,Ballots,Hotstring
 +/-,±,Plus minus sign,Math,Hotstring
 ~~,≈,Almost equal to,Math,Hotstring
 ^E,∑,Sum,Math,Hotstring
-01-Apr,¼,1/4 fraction,Math,Hotstring
-01-Feb,½,1/2 fraction,Math,Hotstring
-03-Apr,¾,3/4 fraction,Math,Hotstring
+1/4,¼,1/4 fraction,Math,Hotstring
+1/2,½,1/2 fraction,Math,Hotstring
+3/4,¾,3/4 fraction,Math,Hotstring
 ^d,Δ,Delta,Math,Hotstring
-Ctrl + Shift + u,Upper case,Convert selection,Strings,Hotkey
-Ctrl + Shift + l,Lower case,Convert selection,Strings,Hotkey
-Ctrl + Shift + p,Proper case,Convert selection,Strings,Hotkey
+Ctrl + Win + Shift + u,Upper case,Convert selection,Strings,Hotkey
+Ctrl + Win + Shift + l,Lower case,Convert selection,Strings,Hotkey
+Ctrl + Win + Shift + p,Proper case,Convert selection,Strings,Hotkey

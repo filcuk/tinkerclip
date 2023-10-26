@@ -22,7 +22,7 @@
 ; Z     Reset hotstring recogniser after each trigger
 ; Z0    Disable recogniser reset on trigger (default)
 
-#Hotstring EndChars `n `t
+#Hotstring EndChars `n `t ,
 #Hotstring C
 
 :* X:unit@::InsertCharGUI("unit")
@@ -32,17 +32,26 @@
 ; === HACKS =====================================
 :*:invpbi@::{U+00AD}	; (soft hyphen) - invisible but not truncated in Power BI
 
+; === TIME CONVERSION ===========================
+; Planview
+; Open gui with hr & min input, which enters minutes on confirmation
+; #HotIf WinActive("Report Time")
+; ::btw::This replacement text will appear only in Notepad.
+; #HotIf
+
 ; === SHORTHAND =================================
 ::msa::MS Access
 ::mse::MS Excel
 ::pbi::Power BI
+::br::Best Regards
+::kr::Kind Regards
 
 ; === DATE & TIME ===============================
+:* X:timestamp@::    SendInput(FormatTime(A_Now, "yyyyMMddHHmmss"))
 :* X:date@::   SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
 :* X:time@::   SendInput(FormatTime(A_Now, "HH:mm"))
-:* X:now@::    SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
-:* X:altnow@::    SendInput(FormatTime(A_Now, "dd/MM/yyyy HH:mm"))
-:* X:timestamp@::    SendInput(FormatTime(A_Now, "yyyyMMddHHmmss"))
+:* X:nowiso@::    SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
+:* X:now@::    SendInput(FormatTime(A_Now, "dd/MM/yyyy HH:mm"))
 :* X:scr@::    SendInput("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd HHmmss"))
 
 ; === UNITS =====================================
@@ -77,18 +86,57 @@
 :*:swa@::{U+2199}	; ↙
 
 ; === BALLOT ====================================
-:*:[v]::{U+1F5F9}	; 🗹
-:*:[x]::{U+2612}    ; ☒
-:*:[ ]::{U+2610}	; ☐
+:*:[v]@::{U+1F5F9}	; 🗹
+:*:[x]@::{U+2612}    ; ☒
+:*:[ ]@::{U+2610}	; ☐
 :*:v@::{U+2713}		; ✓
 :*:x@::{U+2717}		; ✗
 
 ; === REFERENCE =================================
-::^1::{U+00B9}		; ¹
-::^2::{U+00B2}		; ²
-::^3::{U+00B3}		; ³
-::^t::{U+2020}		; †
-::^2t::{U+2021}		; ‡
+; === superscript ===============================
+:*:^0::{U+2070}		; ⁰
+:*:^1::{U+00B9}		; ¹
+:*:^2::{U+00B2}		; ²
+:*:^3::{U+00B3}		; ³
+:*:^4::{U+2074}		; ⁴
+:*:^5::{U+2075}		; ⁵
+:*:^6::{U+2076}		; ⁶
+:*:^7::{U+2077}		; ⁷
+:*:^8::{U+2078}		; ⁸
+:*:^9::{U+2079}		; ⁹
+:*:^+::{U+207A}		; ⁺
+:*:^-::{U+207B}		; ⁻
+:*:^=::{U+207C}		; ⁼
+:*:^(::{U+207D}		; ⁽
+:*:^)::{U+207E}		; ⁾
+:*:^n::{U+207F}		; ⁿ
+
+; === subscript ===============================
+; which key to use?
+; :*:0::{U+2080}		; 
+; :*:1::{U+2081}		; 
+; :*:2::{U+2082}		; 
+; :*:3::{U+2083}		; 
+; :*:4::{U+2084}		; 
+; :*:5::{U+2085}		; 
+; :*:6::{U+2086}		; 
+; :*:7::{U+2087}		; 
+; :*:8::{U+2088}		; 
+; :*:9::{U+2089}		; 
+; :*:+::{U+208A}		; 
+; :*:-::{U+208B}		; 
+; :*:=::{U+208C}		; 
+; :*:(::{U+208D}		; 
+; :*:)::{U+208E}		; 
+; :*:a::{U+2090}		; 
+; :*:e::{U+2091}		; 
+; :*:o::{U+2092}		; 
+; :*:x::{U+2093}		; 
+; :*:::{U+2094}		; ₔ
+
+; === other =====================================
+:*:^t::{U+2020}		; †
+:*:^2t::{U+2021}	; ‡
 
 ; === MATH ======================================
 ; https://unicode-table.com/en/sets/mathematical-signs/
