@@ -23,14 +23,14 @@
 ; Z0    Disable recogniser reset on trigger (default)
 
 #Hotstring EndChars `n `t ,
-#Hotstring C
+; #Hotstring C
 
-:* X:unit@::InsertCharGUI("unit")
-:* X:math@::InsertCharGUI("math")
-:* X:symb@::InsertCharGUI("symb")
+:*X:unit@::InsertCharGUI("unit")
+:*X:math@::InsertCharGUI("math")
+:*X:symb@::InsertCharGUI("symb")
 
 ; === HACKS =====================================
-:*:invpbi@::{U+00AD}	; (soft hyphen) - invisible but not truncated in Power BI
+:*:pbiinvis@::{U+00AD}	; (soft hyphen) - invisible but not truncated in Power BI
 
 ; === TIME CONVERSION ===========================
 ; Planview
@@ -40,25 +40,28 @@
 ; #HotIf
 
 ; === SHORTHAND =================================
-::msa::MS Access
-::mse::MS Excel
-::pbi::Power BI
+:*:msa@::MS Access
+:*:mse@::MS Excel
+:*:pbi@::Power BI
+:*:pat@::Power Automate
+:*:pap@::Power Apps
 ::br::Best Regards
 ::kr::Kind Regards
 
 ; === DATE & TIME ===============================
-:* X:timestamp@::    SendInput(FormatTime(A_Now, "yyyyMMddHHmmss"))
-:* X:date@::   SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
-:* X:time@::   SendInput(FormatTime(A_Now, "HH:mm"))
-:* X:nowiso@::    SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
-:* X:now@::    SendInput(FormatTime(A_Now, "dd/MM/yyyy HH:mm"))
-:* X:scr@::    SendInput("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd HHmmss"))
+:*X:timestamp@::	SendInput(FormatTime(A_Now, "yyyyMMddHHmmss"))
+:*X:date@::   		SendInput(FormatTime(A_Now, "yyyy-MM-dd"))
+:*X:time@::			SendInput(FormatTime(A_Now, "HH:mm"))
+:*X:nowiso@::		SendInput(FormatTime(A_Now, "yyyy-MM-dd HH:mm"))
+:*X:now@::			SendInput(FormatTime(A_Now, "dd/MM/yyyy HH:mm"))
+:*X:scr@::			SendInput("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd HHmmss"))
 
 ; === UNITS =====================================
 :*:dg@::{U+00B0}    ; °
 :*:dgc@::{U+2103}   ; ℃
 :*:dgf@::{U+2109}   ; ℉
 :*:dgk@::{U+212A}   ; K
+:*C1:co2::CO{U+2082}   ;
 
 ; === MISC ======================================
 ::(c)::{U+00A9}		; ©
@@ -112,22 +115,21 @@
 :*:^n::{U+207F}		; ⁿ
 
 ; === subscript ===============================
-; which key to use?
-; :*:0::{U+2080}		; 
-; :*:1::{U+2081}		; 
-; :*:2::{U+2082}		; 
-; :*:3::{U+2083}		; 
-; :*:4::{U+2084}		; 
-; :*:5::{U+2085}		; 
-; :*:6::{U+2086}		; 
-; :*:7::{U+2087}		; 
-; :*:8::{U+2088}		; 
-; :*:9::{U+2089}		; 
-; :*:+::{U+208A}		; 
-; :*:-::{U+208B}		; 
-; :*:=::{U+208C}		; 
-; :*:(::{U+208D}		; 
-; :*:)::{U+208E}		; 
+:*:¬0::{U+2080}		; ₀
+:*:¬1::{U+2081}		; ₁
+:*:¬2::{U+2082}		; ₂
+:*:¬3::{U+2083}		; ₃
+:*:¬4::{U+2084}		; ₄
+:*:¬5::{U+2085}		; ₅
+:*:¬6::{U+2086}		; ₆
+:*:¬7::{U+2087}		; ₇
+:*:¬8::{U+2088}		; ₈
+:*:¬9::{U+2089}		; ₉
+:*:¬+::{U+208A}		; ₊
+:*:¬-::{U+208B}		; ₋
+:*:¬=::{U+208C}		; ₌
+:*:¬(::{U+208D}		; ₍
+:*:¬)::{U+208E}		; ₎
 ; :*:a::{U+2090}		; 
 ; :*:e::{U+2091}		; 
 ; :*:o::{U+2092}		; 
@@ -160,6 +162,7 @@
 ::3/4::{U+00BE}		; ¾
 
 ::^d::{U+0394}		; Δ (delta)
+:*:diff@::{U+0394}	; Δ (delta)
 
 ; Restore default behaviour
 #Hotstring *0 ?0 C0 Z0 O0
