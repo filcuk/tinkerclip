@@ -1,3 +1,9 @@
+; Nudge mouse with right ctrl + arrow keys
+RCtrl & Up::MouseMove 0, -1, 0, "R"
+RCtrl & Down::MouseMove 0, 1, 0, "R"
+RCtrl & Left::MouseMove -1, 0, 0, "R"
+RCtrl & Right::MouseMove 1, 0, 0, "R"
+
 ; Change Apps key to Win key
 #HotIf AppWinKey
 AppsKey::RWin
