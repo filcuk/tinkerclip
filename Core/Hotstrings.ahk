@@ -28,6 +28,7 @@
 :*X:unit@::InsertCharGUI("unit")
 :*X:math@::InsertCharGUI("math")
 :*X:symb@::InsertCharGUI("symb")
+:*X:clip@::Send("{Raw}" . A_Clipboard)
 
 ; === HACKS =====================================
 :*:pbiinvis@::{U+00AD}	; (soft hyphen) - invisible but not truncated in Power BI
@@ -39,6 +40,9 @@
 ; ::btw::This replacement text will appear only in Notepad.
 ; #HotIf
 
+; === Power Query ===============================
+:*:int@::Int64.Type
+
 ; === SHORTHAND =================================
 :*:msa@::MS Access
 :*:mse@::MS Excel
@@ -47,6 +51,15 @@
 :*:pap@::Power Apps
 ::br::Best Regards
 ::kr::Kind Regards
+::mt::Many Thanks
+:*:ref@::Related:{Enter}-{Space}
+
+; === UI ========================================
+; :*:avg@::x̄
+:*:avg@::Ø
+:*:diff@::{U+0394}	; Δ (delta)
+:*:sum@::{U+2211} ; ∑ (sum)
+:*:cnt@::#
 
 ; === DATE & TIME ===============================
 :*X:timestamp@::	SendInput(FormatTime(A_Now, "yyyyMMddHHmmss"))
@@ -56,12 +69,17 @@
 :*X:now@::			SendInput(FormatTime(A_Now, "dd/MM/yyyy HH:mm"))
 :*X:scr@::			SendInput("Screenshot " . FormatTime(A_Now, "yyyy-MM-dd HHmmss"))
 
+; === MISC UNITS =====================================
+:*C1:co2::CO{U+2082}   ; CO₂
+:*C1:ch4::CH{U+2084}   ; CH₄
+:*C1:n2o::N{U+2082}O   ; N₂O
+
 ; === UNITS =====================================
 :*:dg@::{U+00B0}    ; °
 :*:dgc@::{U+2103}   ; ℃
 :*:dgf@::{U+2109}   ; ℉
 :*:dgk@::{U+212A}   ; K
-:*C1:co2::CO{U+2082}   ;
+:*:um@::{U+00B5}m   ; µ
 
 ; === MISC ======================================
 ::(c)::{U+00A9}		; ©
@@ -74,12 +92,12 @@
 :*:8@::{U+29D6}		; ⧖ (white hourglass)
 
 ; === ARROWS ====================================
-:*:<-::{U+2190}		; ←
-:*:->::{U+2192}		; →
-:*:/\::{U+2191}		; ↑
-:*:\/::{U+2193}		; ↓
-:*:<<::{U+00AB}		; «
-:*:>>::{U+00BB}		; »
+:*:<-@::{U+2190}		; ←
+:*:->@::{U+2192}		; →
+:*:/\@::{U+2191}		; ↑
+:*:\/@::{U+2193}		; ↓
+:*:<<@::{U+00AB}		; «
+:*:>>@::{U+00BB}		; »
 
 :*:lra@::{U+2194}	; ↔
 :*:uda@::{U+2195}	; ↕
@@ -90,7 +108,7 @@
 
 ; === BALLOT ====================================
 :*:[v]@::{U+1F5F9}	; 🗹
-:*:[x]@::{U+2612}    ; ☒
+:*:[x]@::{U+2612}   ; ☒
 :*:[ ]@::{U+2610}	; ☐
 :*:v@::{U+2713}		; ✓
 :*:x@::{U+2717}		; ✗
@@ -152,17 +170,15 @@
 :*:<=::{U+2264}     ; ≤ (less-than or equal to)
 :*:>=::{U+2265}     ; ≥ (greater-than or equal to)
 :*:~~::{U+2248}     ; ≈ (almost equal to)
-; ::-~::{U+2242}	  ; ≂ (minus tilde)
-; ::~-::{U+2248}      ; ≃ (asymptotically equal to)
-; ::~=::{U+2248}      ; ≅ (approximately equal to)
+:*:-~::{U+2242}	    ; ≂ (minus tilde)
+:*:~-::{U+2248}     ; ≃ (asymptotically equal to)
+:*:~=::{U+2248}     ; ≅ (approximately equal to)
 :* C:^E::{U+2211}   ; ∑ (sum)
+:*:^d::{U+0394}		; Δ (delta)
 
 ::1/4::{U+00BC}		; ¼
 ::1/2::{U+00BD}		; ½
 ::3/4::{U+00BE}		; ¾
-
-::^d::{U+0394}		; Δ (delta)
-:*:diff@::{U+0394}	; Δ (delta)
 
 ; Restore default behaviour
 #Hotstring *0 ?0 C0 Z0 O0
@@ -170,3 +186,6 @@
 ; Markdown URL source inserter
 :* X:source@::SendInstant(MD_SourceLink(A_Clipboard))
 :* X:sourcef@::SendInstant("Source: " . MD_SourceLink(A_Clipboard))
+
+:* X:jira@::SendInstant(LinkParser_JiraIssueToMD(A_Clipboard))
+; :* X:jira#::SendInstant(LinkParser_JiraIssueToHTML(A_Clipboard))

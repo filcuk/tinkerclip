@@ -19,6 +19,7 @@ SetWorkingDir A_ScriptDir
 #Include SendInstant.ahk
 #Include MouseWiggle.ahk
 #Include ExcelModalTerminator.ahk
+#Include PBISecurityRisk.ahk
 
 #Include %A_ScriptDir%\Private\Private0.ahk
 
@@ -29,6 +30,10 @@ SetWorkingDir A_ScriptDir
 ; === TIMERS ==============================================
 SetTimer(MouseWiggle, 1000)				; Wiggle mouse when idle
 SetTimer(ExcelModalTerminator, 1000)	; Clear unwanted Excel pop-ups
+SetTimer(RDAutoLogin, 1000)             ; Automatic remote desktop login
+; SetTimer(VPNAutoLogin, 3000)            ; Automatic VPN login
+SetTimer(PBISecurityRisk, 3000)         ; Confirm popup that annoyingly isn't modal
+; SetTimer(MSAutoLogin, 1000)             ; Automatic MS login
 
 ; === END OF AUTO-EXECUTE =================================
 Return
