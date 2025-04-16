@@ -52,7 +52,7 @@
 ::br::Best Regards
 ::kr::Kind Regards
 ::mt::Many Thanks
-:*:ref@::Related:{Enter}-{Space}
+; :*:ref@::Related:{Enter}-{Space}
 
 ; === UI ========================================
 ; :*:avg@::x̄
@@ -90,6 +90,7 @@
 :*:-2@::{U+2013}	; – (en dash)
 :*:-3@::{U+2014}	; — (em dash)
 :*:8@::{U+29D6}		; ⧖ (white hourglass)
+:*:RTL@::{U+202E}   ; LOL
 
 ; === ARROWS ====================================
 :*:<-@::{U+2190}		; ←
@@ -156,7 +157,7 @@
 
 ; === other =====================================
 :*:^t::{U+2020}		; †
-:*:^2t::{U+2021}	; ‡
+:*:^t2::{U+2021}	; ‡
 
 ; === MATH ======================================
 ; https://unicode-table.com/en/sets/mathematical-signs/
