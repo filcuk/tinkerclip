@@ -1,7 +1,7 @@
 ; === INIT ================================================
 AutoStartLnk := A_Startup . "\TinkerClip.lnk"
 AutoStart := (False Or FileExist(AutoStartLnk))
-TrayIdle := False
+TrayIdle := True
 Suspended := False
 AppWinKey := True
 
