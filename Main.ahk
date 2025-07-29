@@ -18,6 +18,7 @@ SetWorkingDir A_ScriptDir
 #Include MD_SourceLink.ahk
 #Include SendInstant.ahk
 #Include MouseWiggle.ahk
+#Include AbortReset.ahk
 #Include ExcelModalTerminator.ahk
 #Include PBISecurityRisk.ahk
 
@@ -29,6 +30,7 @@ SetWorkingDir A_ScriptDir
 
 ; === TIMERS ==============================================
 SetTimer(MouseWiggle, 1000)				; Wiggle mouse when idle
+; SetTimer(AbortReset, 5000)				; Abort any restarts
 SetTimer(ExcelModalTerminator, 1000)	; Clear unwanted Excel pop-ups
 SetTimer(RDAutoLogin, 1000)             ; Automatic remote desktop login
 ; SetTimer(VPNAutoLogin, 3000)            ; Automatic VPN login
