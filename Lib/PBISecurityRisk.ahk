@@ -5,6 +5,6 @@ PBISecurityRisk()
 	If (WinExist("Potential security risk"))
 	{
 		WinActivate()
-		Send "{Tab}{Tab}{Enter}"
+		Send "{Tab}{Tab}{Tab}{Enter}"
 	}
 }
