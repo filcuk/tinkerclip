@@ -87,7 +87,7 @@
 ::(r)::{U+00AE}		; ®
 :*:.@::{U+00B7}		; · (middle dot)
 :*:-@::{U+2022}		; • (bullet)
-:*:>@::{U+2023}		; ‣ (triangular bullet)
+:*:^>::{U+2023}		; ‣ (triangular bullet)
 :*:-2@::{U+2013}	; – (en dash)
 :*:-3@::{U+2014}	; — (em dash)
 :*:8@::{U+29D6}		; ⧖ (white hourglass)
