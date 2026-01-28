@@ -40,6 +40,10 @@
 ; ::btw::This replacement text will appear only in Notepad.
 ; #HotIf
 
+; === Emojis ===============================
+:*:`:work`:::{U+0001FA9A}   ; 🪚
+:*:w`:::{U+0001FA9A}   ; 🪚
+
 ; === Power Query ===============================
 :*:int@::Int64.Type
 
