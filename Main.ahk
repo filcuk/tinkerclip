@@ -21,6 +21,7 @@ SetWorkingDir A_ScriptDir
 #Include AbortReset.ahk
 #Include ExcelModalTerminator.ahk
 #Include PBISecurityRisk.ahk
+#Include HexToWinRGB.ahk
 
 #Include %A_ScriptDir%\Private\Private0.ahk
 
