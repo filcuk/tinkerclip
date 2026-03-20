@@ -40,6 +40,9 @@
 ; ::btw::This replacement text will appear only in Notepad.
 ; #HotIf
 
+; === Nonsense ===============================
+:*:`:dune`:::ᑐ ᑌ ᑎ ᕮ
+
 ; === Emojis ===============================
 :*:`:work`:::{U+0001FA9A}   ; 🪚
 :*:w`:::{U+0001FA9A}
